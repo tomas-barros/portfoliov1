@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+nav .items { 
+    position: fixed;
+    display: flex;
+    margin: 0 0 0 1rem;
+    width: 100%;
+    font-size: 14pt;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+nav .items ul {
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+nav .items ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav .items ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.landing-page .textcontent {
+    background-color: rgba(255, 255, 255, 0.39);
+    border: 5px solid #ecf0f1;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.landing-page .textcontent h1 {
+    font-size: 35pt;
+}
+
+.landing-page .textcontent h3 {
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+}
+
+.skills-container {
+    height: 100vh;
+    border-top: 10px solid #2c3e50;
+    border-bottom: 10px solid #2c3e50;
+    background-color: #ecf0f1;
+}
+
+.content {
+    margin: 0 5rem;
+}
+
+.skills-container .content .title h2 {
+    font-size: 24pt;
+}
+
+.skills-container .content .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.progress {
+    border: 3px solid #c0392b;
+    border-radius: 10px;
+    min-width: 100%;
+    height: 34px;
+}
+
+.progress>span {
+    display: block;
+    height: 100%;
+    background-color: #e74c3c;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    padding: 3px 1rem;
+    color: white;
+}
+
+.progress-item {
+    margin: 0.4rem 0;
+}
+
+.progress-item h4 {
+    text-align: center;
+}
+
+.title {
+    padding: 1rem 0;
+}
+
+.form-area {
+    margin: 0;
+    background-color: #ecf0f1;
+    height: 100vh;
+}
+
+.msgbox {
+    background-color: rgba(170, 94, 94, 0.788);
+    width: fit-content;
+    padding: 2rem 3rem;
+    border: 4px solid rgb(194, 71, 71);
+    color: white;
+    margin: 2rem 0;
+}
+
+.form form {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input input {
+    padding: 12px 16px;
+    font-size: 14pt;
+    background-color: #ffffff;
+    border-bottom: #61666b 4px solid;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    transition: border-radius .3s ease;
+}
+
+.form-input input:focus, .form-input input:hover {
+    border-radius: 20px;
+}
+
+.form-input-xl textarea {
+    padding: 12px 16px;
+    font-size: 14pt;
+    background-color: #fff;
+    border-bottom: #61666b 4px solid;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    transition: border-radius .3s ease;
+}
+
+.form-input-xl textarea:focus, .form-input-xl textarea:hover {
+    border-radius: 20px;
+}
+
+.form-input input, .form-input-xl textarea {
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.form-input-xl textarea {
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.form-input>h6, .form-input-xl>h6 {
+    font-size: 14pt;
+    margin-bottom: 0.2rem;
+}
+
+.btn {
+    padding: 12px 16px;
+    font-size: 14pt;
+    width: 600px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color .3s ease,
+                color .3s ease,
+                border-color .3s ease;
+}
+
+.primary {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #8e44ad;
+}
+
+.secondary {
+    border: 4px solid #9b59b6;
+    color: #9b59b6;
+    font-weight: 900;
+}
+
+.secondary:hover {
+    color: #8e44ad;
+    border-color: #8e44ad;
+}
+
+#sendBtn {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 720px) {
+    .skills-container {
+        height: 100%;  
+    }
+
+    .skills-container .content .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .form-area {
+        height: 100%;
+    }
+
+    .form-input input, .form-input-xl textarea {
+        min-width: 200px;
+        max-width: 200px;
+    }
+}

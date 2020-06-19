@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tomas Barros</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="items">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="landing-page" id="home">
+
+        <div class="textcontent">
+            <h1>Tomas Barros</h1>
+            <h3>Junior Dev</h3>
+        </div>
+
+    </div>
+
+    <div class="skills-container" id="skills">
+        
+        <div class="content">
+            <div class="title">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills">
+
+                <div class="progress-item">
+                    <h4>HTML 75%</h4>
+                    <div class="progress"><span style="width: 75%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>CSS 60%</h4>
+                    <div class="progress"><span style="width: 60%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>JS 54%</h4>
+                    <div class="progress"><span style="width: 54%"></span></div>
+                </div>
+
+                <div class="progress-item">
+                    <h4>Python3 48%</h4>
+                    <div class="progress"><span style="width: 48%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>PHP 40%</h4>
+                    <div class="progress"><span style="width: 40%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>Pawn 70%</h4>
+                    <div class="progress"><span style="width: 70%"></span></div>
+                </div>
+
+                <div class="progress-item">
+                    <h4>Flask 32%</h4>
+                    <div class="progress"><span style="width: 32%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>Tkinter 40%</h4>
+                    <div class="progress"><span style="width: 40%"></span></div>
+                </div>
+                <div class="progress-item">
+                    <h4>Databases 20%</h4>
+                    <div class="progress"><span style="width: 20%"></span></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-area" id="contact">
+
+        <div class="content">
+
+            <div class="title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="form">
+                <form action="https://formspree.io/maypboaj" method="post">
+
+                    <div class="form-input">
+                        <h6>Email</h6>
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="johndoe@example.com"
+                            required>
+                    </div>
+                    <div class="form-input-xl">
+                        <h6>Message</h6>
+                        <textarea 
+                            name="reason"
+                            id="reason"
+                            placeholder="Type some content here..."
+                            minlength="10"
+                            onkeyup="drawSendBtn()"
+                            required>
+                        </textarea>
+                    </div>
+                    <div class="form-input">
+                        <h6>Cellphone</h6>
+                        <input type="tel"
+                            name="cellphone"
+                            id="cellphone"
+                            placeholder="+XX X XXXXXXXX"
+                            required>
+                    </div>
+
+                    <button type="submit" class="btn primary" id="sendBtn">Send!</button>
+                    <button type="reset" class="btn secondary">Clear</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="textcheck.js"></script>
+
+</body>
+</html>
